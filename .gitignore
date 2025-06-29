@@ -1,0 +1,60 @@
+# ======================================
+# Build Artifacts
+# ======================================
+target/
+build/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot Secrets
+src/main/resources/application.properties
+src/main/resources/application.yml
+
+# Environment Files
+.env
+.env.*
+!.env.example  # Keep this template in repo
+
+# Ignore help/generated files
+HELP.md
+
+# ======================================
+# IDE: IntelliJ IDEA
+# ======================================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ======================================
+# IDE: Spring Tool Suite (STS)
+# ======================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ======================================
+# IDE: NetBeans
+# ======================================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ======================================
+# IDE: Visual Studio Code
+# ======================================
+.vscode/
+
+# ======================================
+# Exclude inner target/build folders in src (usually not generated)
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
